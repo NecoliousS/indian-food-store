@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Food Store - Farmingdale, NY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🍛 Indian Food Store</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Authentic Indian Cuisine</h1>
+            <p>Fresh flavors, warm spices, and traditional recipes served with love in Farmingdale, NY</p>
+            <a href="menu.html" class="btn-primary">View Our Menu</a>
+            <a href="tel:+15165863104" class="btn-secondary">Call to Order</a>
+        </div>
+    </section>
+
+    <!-- Info Bar -->
+    <section class="info-bar">
+        <div class="container">
+            <div class="info-item">
+                <span class="icon">📍</span>
+                <p>960 Fulton St, Farmingdale, NY 11735</p>
+            </div>
+            <div class="info-item">
+                <span class="icon">📞</span>
+                <p><a href="tel:+15165863104">(516) 586-3104</a></p>
+            </div>
+            <div class="info-item">
+                <span class="icon">🕐</span>
+                <p>Open Today: <span id="today-hours">Check Hours</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🥘</div>
+                    <h3>Authentic Recipes</h3>
+                    <p>Traditional Indian dishes made with fresh ingredients and aromatic spices</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚗</div>
+                    <h3>Delivery & Takeout</h3>
+                    <p>Convenient delivery and takeout options available for your busy schedule</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Family Friendly</h3>
+                    <p>Perfect atmosphere for families, solo dining, and casual meals</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">♿</div>
+                    <h3>Accessible</h3>
+                    <p>Wheelchair accessible parking lot for all our guests</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours Section -->
+    <section class="hours-section">
+        <div class="container">
+            <h2>📅 Hours of Operation</h2>
+            <div class="hours-grid">
+                <div class="hours-row">
+                    <span class="day">Monday</span>
+                    <span class="time">6:00 AM – 7:30 PM</span>
+                </div>
+                <div class="hours-row">
+                    <span class="day">Tuesday</span>
+                    <span class="time">6:00 AM – 8:30 PM</span>
+                </div>
+                <div class="hours-row">
+                    <span class="day">Wednesday</span>
+                    <span class="time">6:00 AM – 7:30 PM</span>
+                </div>
+                <div class="hours-row">
+                    <span class="day">Thursday</span>
+                    <span class="time">6:00 AM – 7:30 PM</span>
+                </div>
+                <div class="hours-row">
+                    <span class="day">Friday</span>
+                    <span class="time">6:00 AM – 8:30 PM</span>
+                </div>
+                <div class="hours-row">
+                    <span class="day">Saturday</span>
+                    <span class="time">6:00 AM – 8:30 PM</span>
+                </div>
+                <div class="hours-row closed">
+                    <span class="day">Sunday</span>
+                    <span class="time">Closed</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+        <div class="container">
+            <h2>What We Offer</h2>
+            <div class="services-grid">
+                <div class="service-tag">🍽️ Dine-in</div>
+                <div class="service-tag">🥡 Takeout</div>
+                <div class="service-tag">🚚 Delivery</div>
+                <div class="service-tag">🌅 Breakfast</div>
+                <div class="service-tag">🌞 Lunch</div>
+                <div class="service-tag">🌙 Dinner</div>
+                <div class="service-tag">⚡ Quick Bite</div>
+                <div class="service-tag">👶 Good for Kids</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <h2>Hungry? Order Now!</h2>
+            <p>Call us directly or visit us at our Fulton Street location</p>
+            <a href="tel:+15165863104" class="btn-primary">Call (516) 586-3104</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Indian Food Store. All rights reserved.</p>
+            <p>960 Fulton St, Farmingdale, NY 11735 | <a href="tel:+15165863104">(516) 586-3104</a></p>
+            <p>We accept: Credit Cards, Debit Cards, NFC Mobile Payments</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+
+        // Show today's hours
+        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        const hoursMap = {
+            'Monday': '6 AM – 7:30 PM',
+            'Tuesday': '6 AM – 8:30 PM',
+            'Wednesday': '6 AM – 7:30 PM',
+            'Thursday': '6 AM – 7:30 PM',
+            'Friday': '6 AM – 8:30 PM',
+            'Saturday': '6 AM – 8:30 PM',
+            'Sunday': 'Closed'
+        };
+        const today = days[new Date().getDay()];
+        document.getElementById('today-hours').textContent = hoursMap[today];
+    </script>
+</body>
+</html>
