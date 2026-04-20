@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Indian Food Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🍛 Indian Food Store</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </div>
+    </nav>
+
+    <section class="menu-hero">
+        <div class="container">
+            <h1>Our Menu</h1>
+            <p>Authentic Indian flavors for every meal</p>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <div class="container">
+            <div class="menu-category">
+                <h2>🌅 Breakfast</h2>
+                <div class="menu-item">
+                    <div>
+                        <div class="menu-item-name">Masala Dosa</div>
+                        <div class="menu-item-desc">Crispy rice crepe filled with spiced potatoes</div>
+                    </div>
+                    <div class="menu-item-price">$8.99</div>
+                </div>
+                <div class="menu-item">
+                    <div>
+                        <div class="menu-item-name">Idli Sambar</div>
+                        <div class="menu-item-desc">Steamed rice cakes with lentil soup</div>
+                    </div>
+                    <div class="menu-item-price">$7.99</div>
+                </div>
+                <div class="menu-item">
+                    <div>
+                        <div class="menu-item-name">Paratha Thali</div>
+                        <div class="menu-item-desc">Layered flatbread with yogurt and pickle</div>
+                    </div>
+                    <div class="menu-item-price">$9.99</div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h2>🌞 Lunch Specials</h2>
+                <div class="menu-item">
+                    <div>
+                        <div class="menu-item-name">Chicken Tikka Masala</div>
+                        <div class="menu-item-desc">Grilled chicken in creamy tomato sauce</div>
+                    </div>
+                    <div class="menu-item-price">$13.99</div>
+                </div>
+                <div class="menu-item">
+                    <div>
+                        <div class="menu-item-name">Vegetable Biryani</div>
+                        <div class="menu-item-desc">Fragrant rice with mixed vegetables and spices</div>
+                    </div>
+                    <div class="menu-item-price">$11.99</div>
+                </div>
+                <div class="menu-item">
+                    <div>
+                        <div class="menu-item-name">Lamb Curry</div>
+                        <div class="menu-item-desc">Tender lamb in rich onion-tomato gravy</div>
+                    </div>
+                    <div class="menu-item-price">$14.99</div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h2>🌙 Dinner</h2>
+                <div class="menu-item">
+                    <div>
+                        <div class="menu-item-name">Butter Chicken</div>
+                        <div class="menu-item-desc">Classic creamy tomato curry with naan</div>
+                    </div>
+                    <div class="menu-item-price">$14.99</div>
+                </div>
+                <div class="menu-item">
+                    <div>
+                        <div class="menu-item-name">Palak Paneer</div>
+                        <div class="menu-item-desc">Cottage cheese in spiced spinach gravy</div>
+                    </div>
+                    <div class="menu-item-price">$12.99</div>
+                </div>
+                <div class="menu-item">
+                    <div>
+                        <div class="menu-item-name">Tandoori Mixed Grill</div>
+                        <div class="menu-item-desc">Assorted meats from the clay oven</div>
+                    </div>
+                    <div class="menu-item-price">$18.99</div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h2>🥤 Beverages</h2>
+                <div class="menu-item">
+                    <div>
+                        <div class="menu-item-name">Mango Lassi</div>
+                        <div class="menu-item-desc">Sweet yogurt drink with mango</div>
+                    </div>
+                    <div class="menu-item-price">$4.99</div>
+                </div>
+                <div class="menu-item">
+                    <div>
+                        <div class="menu-item-name">Masala Chai</div>
+                        <div class="menu-item-desc">Spiced Indian tea with milk</div>
+                    </div>
+                    <div class="menu-item-price">$3.99</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Order?</h2>
+            <p>Call us for delivery or takeout</p>
+            <a href="tel:+15165863104" class="btn-primary">Call (516) 586-3104</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Indian Food Store. All rights reserved.</p>
+            <p>960 Fulton St, Farmingdale, NY 11735 | <a href="tel:+15165863104">(516) 586-3104</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
