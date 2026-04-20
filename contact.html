@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Indian Food Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🍛 Indian Food Store</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </div>
+    </nav>
 
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <section class="contact-grid container">
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            
+            <div class="info-block">
+                <h3>📍 Address</h3>
+                <p>960 Fulton St<br>Farmingdale, NY 11735</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">Wheelchair accessible parking available</p>
+            </div>
+
+            <div class="info-block">
+                <h3>📞 Phone</h3>
+                <p><a href="tel:+15165863104">(516) 586-3104</a></p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">Call for orders, delivery & takeout</p>
+            </div>
+
+            <div class="info-block">
+                <h3>🕐 Hours</h3>
+                <p><strong>Mon, Wed, Thu:</strong> 6 AM – 7:30 PM</p>
+                <p><strong>Tue, Fri, Sat:</strong> 6 AM – 8:30 PM</p>
+                <p><strong>Sun:</strong> Closed</p>
+            </div>
+
+            <div class="info-block">
+                <h3>💳 Payment Methods</h3>
+                <p>Credit Cards, Debit Cards, NFC Mobile Payments</p>
+            </div>
+
+            <div class="info-block">
+                <h3>🍽️ Services</h3>
+                <p>Delivery, Takeout, Dine-in<br>Breakfast, Lunch, Dinner<br>Family-friendly | Good for kids</p>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9!2d-73.4456!3d40.7329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e82a5e5b5b5b5b%3A0x5b5b5b5b5b5b5b5b!2s960%20Fulton%20St%2C%20Farmingdale%2C%20NY%2011735!5e0!3m2!1sen!2sus!4v1234567890"
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Visit Us Today!</h2>
+            <p>Free street parking available</p>
+            <a href="https://maps.google.com/?q=960+Fulton+St+Farmingdale+NY+11735" target="_blank" class="btn-primary">Get Directions</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Indian Food Store. All rights reserved.</p>
+            <p>960 Fulton St, Farmingdale, NY 11735 | <a href="tel:+15165863104">(516) 586-3104</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
